@@ -21,7 +21,7 @@ export default function Component() {
             const key = `${path}-${i}`;
             cnt++
             const treeNode = {
-                title: `key: ${key} level: ${level} total count: ${cnt}`,
+                title: `${key} level: ${level} total count: ${cnt}`,
                 key,
             };
             list.push(treeNode);
@@ -57,7 +57,7 @@ export default function Component() {
             </Input.Group>
 
             <div className="tree-box">
-                <Tree treeData={data} height={555} defaultExpandAll={false} width={333} />
+                <Tree treeData={data} height={555} defaultExpandAll={false}  />
             </div>
 
         </div>
