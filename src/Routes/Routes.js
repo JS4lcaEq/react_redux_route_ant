@@ -1,4 +1,4 @@
-import { AppstoreOutlined, MailOutlined, SettingOutlined, FileDoneOutlined, PartitionOutlined, BookOutlined, ApiOutlined, ExclamationOutlined } from '@ant-design/icons';
+import { FileDoneOutlined, PartitionOutlined, BookOutlined, ApiOutlined, ExclamationOutlined, HomeOutlined } from '@ant-design/icons';
 
 const routes =
 {
@@ -29,24 +29,23 @@ const routes =
             nm: "Отчеты",
             icon: <FileDoneOutlined />,
             sub: [
-                { nm: "по компонентам ИАС", url: "/reports/components" },
-                { nm: "по программному продукту", url: "/reports/product" },
-                { nm: "по структуре ИАС", url: "/reports/struct" }
+                { nm: "Отчет по компонентам ИАС", url: "/reports/components" },
+                { nm: "Отчет по программному продукту", url: "/reports/product" },
+                { nm: "Отчет по структуре ИАС", url: "/reports/struct" }
             ]
         },
         {
-            nm: "Тех. часть",
+            nm: "Технический раздел",
             icon: <ApiOutlined />,
             sub: [
                 { nm: "Состояние", url: "/tech/state", icon: <ExclamationOutlined /> },
                 { nm: "ANT Design", url: "/tech/ant", icon: <ExclamationOutlined /> },
                 { nm: "Стиль-контроль", url: "/tech/style" },
-                { nm: "Дерево", url: "/tech/tree", icon: <ExclamationOutlined /> }
+                { nm: "Дерево", url: "/tech/tree", icon: <ExclamationOutlined /> },
+                { nm: "Навигатор", url: "/", icon: <HomeOutlined /> }
             ]
-        },
-        {
-            nm: "Навигатор", url: "/", icon: <ExclamationOutlined />
         }
+        
     ]
 }
 
