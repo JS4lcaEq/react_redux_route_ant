@@ -1,0 +1,12 @@
+.box {
+    padding-left: 50px;
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item {
+    display: inline-block;
+    width: 250px;;
+}
+
+.ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+    font-size: 22px;
+}

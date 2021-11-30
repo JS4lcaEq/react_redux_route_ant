@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
+import { HashRouter } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
+import { ConfigProvider } from 'antd';
+import ru_RU from 'antd/lib/locale/ru_RU';
+
 ReactDOM.render(
-  <React.StrictMode>
+  <HashRouter>
     <Provider store={store}>
-      <App />
+      <ConfigProvider locale={ru_RU}>
+        <App />
+      </ConfigProvider>
     </Provider>
-  </React.StrictMode>,
+  </HashRouter>,
   document.getElementById('root')
 );
 

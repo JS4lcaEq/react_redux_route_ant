@@ -1,39 +1,173 @@
-.App {
+@import '~antd/dist/antd.css';
+
+.App{
+  height: 100%;
+}
+
+#l-v {
+  left: 40px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+}
+
+#l-v-2 {
+  left: 80px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+}
+
+#r-v {
+  right: 40px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+}
+
+#u-h {
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: 1px;
+  z-index: 1;
+}
+
+#u-h-2 {
+  left: 0;
+  top: 80px;
+  width: 100%;
+  height: 1px;
+  z-index: 1;
+}
+
+#u-h-3 {
+  left: 0;
+  top: 120px;
+  width: 100%;
+  height: 1px;
+  z-index: 1;
+}
+
+#m40 {
+  background-color: rgba(128, 255, 0, 0.1);
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: 0;
+  color: rgba(128, 255, 0, 0.9);
+
+}
+
+.style-control {
+  background-color: rgba(128, 255, 0, 0.9);
+  position: absolute;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+.on .style-control {
+  display: block;
+}
+
+#box {
+  height: 100%;
+  /* background-color: rgb(196, 255, 214); */
+  display: flex;
+  flex-direction: column;
+}
+
+#up {
+  height: 120px;
+  background-color: #fff;
+  flex-shrink: 0;
+  padding-left: 40px;
+}
+
+#up h2 {
+  margin: 40px 0 0 0;
+  text-align: left;
+  color:  #0a2973;
+  font-weight: bold;
+  font-size: 26px;
+  /* line-height: 40px; */
+}
+
+#up h2 span {
+  margin: 40px 0 0 0;
+  text-align: left;
+  color:  #00a0df;
+  font-weight: normal;
+  /* line-height: 40px; */
+}
+
+#up img {
+  float: right;
+  margin: 30px 40px;
+
+}
+
+#middle {
+  background-color: #fff;
+  flex-grow: 2;
+  padding: 0 40px;
+  flex-shrink: 0;
+}
+
+#bottom {
+  height: 120px;
+  background-color: #0a2973;
+  padding: 0 40px;
+  flex-shrink: 0;
+  display: flex;
+  color: #fff;
+}
+
+#bottom .bottom-col a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#bottom-2 {
+  background-color: #0a2973;
+  color: #00a0df;
+  border-top: 1px #00a0df solid;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hh2 {
+  display: block;
+  font-size: smaller;
+  padding-left: 50px;
+  background-color: beige;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.upper-header {
+  color: #009fdf;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bottom-col {
+  /* background-color: darkblue; */
+  flex-grow: 1;
+  padding: 5px 10px;
+  margin: 0 1px;
+  text-align: left;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.bottom-col p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 33px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.bottom-col .MuiSvgIcon-root {
+  margin-bottom: -6px;
+  margin-right: 10px;
 }
