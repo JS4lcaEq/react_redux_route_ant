@@ -7,7 +7,7 @@ function findRoute(url, sub) {
         let item = sub[i]
         //console.log(item)
         if(item.url && item.url == url){
-            console.log("find = ", item) 
+            //console.log("find = ", item) 
             ret = item
             break
         }
@@ -26,7 +26,7 @@ function findRoute(url, sub) {
 export default function Component() {
     const location = useLocation();
     let fr = findRoute(location.pathname, rts.sub);
-    console.log("fr", fr)
+    //console.log("fr", fr)
     return (
         <>
             {/* <span>location : {location.pathname}</span> */}

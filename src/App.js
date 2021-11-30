@@ -8,16 +8,22 @@ import Ant from './Pages/Ant/Ant'
 import Home from './Pages/Home/Home'
 import Tree from './Pages/Tree/Tree'
 import Debug from './Pages/Debug/Debug'
+import StyleControl from './Pages/StyleControl/StyleControl'
+
+import StyleControlSwitch from './Components/StyleControlSwith/StyleControlSwith'
 
 import Header from './Components/Header/Header'
 
 import { UserOutlined, TeamOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 
+
+
 function App() {
+  
   return (
     <div className="App">
 
-      {/* <StyleChecker /> */}
+      <StyleControlSwitch />
       <div id="box">
 
         <div id="up">
@@ -35,11 +41,11 @@ function App() {
             <Route path="/tech/ant" element={<Ant />} />
             <Route path="/tech/tree" element={<Tree />} />
             <Route path="/debug" element={<Debug />} />
+            <Route path="/tech/styleControl" element={<StyleControl />} />
             <Route path="/*" element={<Debug />} />
           </Routes>
 
-
-
+          
         </div>
         <div id="bottom">
           <div className="bottom-col">
@@ -47,7 +53,7 @@ function App() {
             <Link to="/tech/state"><p>Состояние</p></Link>
           </div>
           <div className="bottom-col">
-            <Link to="/Page2"><p>Стиль-контроль</p></Link>
+            <Link to="/tech/styleControl"><p>Стиль-контроль</p></Link>
           </div>
           <div className="bottom-col">
             <p><UserOutlined /> Administrator/User name</p>

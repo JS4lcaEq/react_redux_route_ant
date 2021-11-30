@@ -4,11 +4,14 @@
 
 .ant-menu-inline.ant-menu-root .ant-menu-item {
     display: inline-block;
-    width: 290px;
-
+    width: 280px;
+    /* font-weight: bold; */
+    font-size: 15px;
 }
 
-
+.ant-menu-submenu-title {
+    font-weight: bold;
+}
 
 .ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
     font-size: 22px;

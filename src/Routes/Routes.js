@@ -29,9 +29,9 @@ const routes =
             nm: "Отчеты",
             icon: <FileDoneOutlined />,
             sub: [
-                { nm: "Отчет по компонентам ИАС", url: "/reports/components" },
-                { nm: "Отчет по программному продукту", url: "/reports/product" },
-                { nm: "Отчет по структуре ИАС", url: "/reports/struct" }
+                { nm: "Отчет компоненты ИАС", url: "/reports/components" },
+                { nm: "Отчет программный продукт", url: "/reports/product" },
+                { nm: "Отчет структура ИАС", url: "/reports/struct" }
             ]
         },
         {
@@ -40,7 +40,7 @@ const routes =
             sub: [
                 { nm: "Состояние", url: "/tech/state", icon: <ExclamationOutlined /> },
                 { nm: "ANT Design", url: "/tech/ant", icon: <ExclamationOutlined /> },
-                { nm: "Стиль-контроль", url: "/tech/style" },
+                { nm: "Стиль-контроль", url: "/tech/styleControl" },
                 { nm: "Дерево", url: "/tech/tree", icon: <ExclamationOutlined /> },
                 { nm: "Навигатор", url: "/", icon: <HomeOutlined /> }
             ]

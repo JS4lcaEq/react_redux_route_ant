@@ -17,6 +17,8 @@ import {
     LoadingOutlined, SmileTwoTone, HeartTwoTone, CheckCircleTwoTone
 } from '@ant-design/icons';
 
+// import locale from 'antd/es/date-picker/locale/ru_RU';
+
 import './Ant.css'
 
 
@@ -105,7 +107,7 @@ export default function Component() {
                     />
                 </Form.Item>
                 <Form.Item label="DatePicker">
-                    <DatePicker />
+                    <DatePicker  />
                 </Form.Item>
                 <Form.Item label="InputNumber">
                     <InputNumber />
