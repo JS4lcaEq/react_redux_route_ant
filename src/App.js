@@ -14,12 +14,12 @@ import StyleControlSwitch from './Components/StyleControlSwith/StyleControlSwith
 
 import Header from './Components/Header/Header'
 
-import { UserOutlined, TeamOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { UserOutlined, TeamOutlined, MenuUnfoldOutlined, PieChartOutlined, UserSwitchOutlined, RocketOutlined } from '@ant-design/icons';
 
 
 
 function App() {
-  
+
   return (
     <div className="App">
 
@@ -29,7 +29,7 @@ function App() {
         <div id="up">
           <Link to="/"><img src="logo.png" alt="Application Logo" /></Link>
           <Link to="/"><h2>АПД <span><Header /></span></h2></Link>
-          
+
         </div>
 
         <div id="middle">
@@ -45,19 +45,19 @@ function App() {
             <Route path="/*" element={<Debug />} />
           </Routes>
 
-          
+
         </div>
         <div id="bottom">
           <div className="bottom-col">
             <Link to="/"><p> <MenuUnfoldOutlined /> Навигатор</p></Link>
-            <Link to="/tech/state"><p>Состояние</p></Link>
+            <Link to="/tech/state"><p><PieChartOutlined /> Состояние</p></Link>
           </div>
           <div className="bottom-col">
-            <Link to="/tech/styleControl"><p>Стиль-контроль</p></Link>
+            <Link to="/tech/styleControl"><p><RocketOutlined /> Стиль-контроль</p></Link>
           </div>
           <div className="bottom-col">
-            <p><UserOutlined /> Administrator/User name</p>
-            <p><TeamOutlined /> User group name</p>
+            <Link to="/"><p><UserOutlined /> Administrator / <UserSwitchOutlined /> User name</p></Link>
+            <Link to="/"><p><TeamOutlined /> User group name</p></Link>
           </div>
         </div>
         <div id="bottom-2">

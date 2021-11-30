@@ -163,8 +163,13 @@
 .bottom-col p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 33px;
+}
+
+.bottom-col a p span {
+  font-size: 18px;
+  margin-bottom: -1px;
 }
 
 .bottom-col .MuiSvgIcon-root {
