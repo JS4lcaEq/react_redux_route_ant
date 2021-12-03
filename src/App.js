@@ -56,7 +56,7 @@ function App() {
             <Link to="/tech/styleControl"><p><RocketOutlined /> Стиль-контроль</p></Link>
           </div>
           <div className="bottom-col">
-            <Link to="/"><p><UserOutlined /> Administrator / <UserSwitchOutlined /> User name</p></Link>
+            <Link to="/"><p> <UserSwitchOutlined /> Administrator / <UserOutlined /> User name</p></Link>
             <Link to="/"><p><TeamOutlined /> User group name</p></Link>
           </div>
         </div>
