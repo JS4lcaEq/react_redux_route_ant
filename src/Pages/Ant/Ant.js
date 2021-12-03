@@ -9,13 +9,7 @@ import { Form,
     InputNumber,
     TreeSelect,
     Switch, } from 'antd';
-import {
-    HomeOutlined,
-    SettingFilled,
-    SmileOutlined,
-    SyncOutlined,
-    LoadingOutlined, SmileTwoTone, HeartTwoTone, CheckCircleTwoTone
-} from '@ant-design/icons';
+import * as i from '@ant-design/icons';
 
 // import locale from 'antd/es/date-picker/locale/ru_RU';
 
@@ -31,20 +25,20 @@ export default function Component() {
     };
     return (
         <div>
-            <Button type="primary">Button</Button>
+
             <div className="icons-list">
-                <HomeOutlined />
-                <SettingFilled />
-                <SmileOutlined />
-                <SyncOutlined spin />
-                <SmileOutlined rotate={180} />
-                <LoadingOutlined />
+                <i.HomeOutlined /> &nbsp;
+                <i.SettingFilled /> &nbsp;
+                <i.SmileOutlined /> &nbsp;
+                <i.SyncOutlined spin /> &nbsp;
+                <i.SmileOutlined rotate={180} /> &nbsp;
+                <i.LoadingOutlined /> &nbsp;
+                <i.SmileTwoTone /> &nbsp;
+                <i.HeartTwoTone twoToneColor="#eb2f96" /> &nbsp;
+                <i.CheckCircleTwoTone twoToneColor="#52c41a" />                
             </div>
-            <div className="icons-list">
-                <SmileTwoTone />
-                <HeartTwoTone twoToneColor="#eb2f96" />
-                <CheckCircleTwoTone twoToneColor="#52c41a" />
-            </div>
+
+            <hr />
             <Form
                 labelCol={{
                     span: 4,

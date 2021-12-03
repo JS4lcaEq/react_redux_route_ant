@@ -1,11 +1,12 @@
-import { FileDoneOutlined, PartitionOutlined, BookOutlined, ApiOutlined, ExclamationOutlined, HomeOutlined } from '@ant-design/icons';
+//import { FileDoneOutlined, PartitionOutlined, BookOutlined, ApiOutlined, ExclamationOutlined, HomeOutlined } from '@ant-design/icons';
+import * as i from '@ant-design/icons';
 
 const routes =
 {
     sub: [
         {
             nm: "Функционал",
-            icon: <PartitionOutlined />,
+            icon: <i.PartitionOutlined />,
             sub: [
                 { nm: "Структура ПО", url: "/struct" },
                 { nm: "Покупное ПО", url: "/po" },
@@ -15,7 +16,7 @@ const routes =
         },
         {
             nm: "Справочники",
-            icon: <BookOutlined />,
+            icon: <i.BookOutlined />,
             sub: [
                 { nm: "Типы документов", url: "/books/dt" },
                 { nm: "Типы носителей", url: "/books/mt" },
@@ -27,7 +28,7 @@ const routes =
         },
         {
             nm: "Отчеты",
-            icon: <FileDoneOutlined />,
+            icon: <i.FileDoneOutlined />,
             sub: [
                 { nm: "Отчет компоненты ИАС", url: "/reports/components" },
                 { nm: "Отчет программный продукт", url: "/reports/product" },
@@ -36,13 +37,13 @@ const routes =
         },
         {
             nm: "Технический раздел",
-            icon: <ApiOutlined />,
+            icon: <i.ApiOutlined />,
             sub: [
-                { nm: "Состояние", url: "/tech/state", icon: <ExclamationOutlined /> },
-                { nm: "ANT Design", url: "/tech/ant", icon: <ExclamationOutlined /> },
+                { nm: "Состояние", url: "/tech/state", icon: <i.ExclamationOutlined /> },
+                { nm: "ANT Design", url: "/tech/ant", icon: <i.ExclamationOutlined /> },
                 { nm: "Стиль-контроль", url: "/tech/styleControl" },
-                { nm: "Дерево", url: "/tech/tree", icon: <ExclamationOutlined /> },
-                { nm: "Навигатор", url: "/", icon: <HomeOutlined /> }
+                { nm: "Дерево", url: "/tech/tree", icon: <i.ExclamationOutlined /> },
+                { nm: "Навигатор", url: "/", icon: <i.HomeOutlined /> }
             ]
         }
         

@@ -19,4 +19,4 @@ export const slice = createSlice({
 
 export const { on, off } = slice.actions
 
-export default slice.reducer
+export default slice

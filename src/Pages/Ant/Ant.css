@@ -1,3 +1,15 @@
 .icons-list {
     font-size: 22px;
 }
+
+hr {
+    color: #eee;
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 20px;
+}
+
+.icons-list .anticon {
+    margin: 0 50px;
+}

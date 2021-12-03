@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { on, off } from '../../Slices/StyleControlSlice'
-import { Button, Switch, Form, Input, Checkbox } from 'antd';
+import StyleControlSlice from '../../Slices/StyleControlSlice'
+import { Switch, Form } from 'antd';
 
 export default function Component() {
     const styleControl = useSelector((state) => state.styleControl.value)
@@ -9,10 +9,10 @@ export default function Component() {
         //console.log(`switch to ${checked}`);
         if (checked) {
             //console.log(`dispatch(on())`);
-            dispatch(on())
+            dispatch(StyleControlSlice.actions.on())
         } else {
             //console.log(`dispatch(off())`);
-            dispatch(off())
+            dispatch(StyleControlSlice.actions.off())
         }
 
     }
